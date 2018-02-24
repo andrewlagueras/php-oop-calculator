@@ -20,14 +20,18 @@ $input4 = $argv[4];
 print_r($argv);
 use Lloricode\Calculator\Calculator;
 use Lloricode\Calculator\Operation\Multiplication;
+use Lloricode\Calculator\Operation\Addition;
 
 $calulator = new Calculator;
 
-// $calulator->compute(new Addition, $input1);
+$calulator->compute(new Addition, $input1);
 $calulator->result();
+
 $calulator->compute(new Multiplication, $input2);
 $calulator->result();
+
 // $calulator->compute(new Division, $input3);
 $calulator->result();
+
 // $calulator->compute(new Subtraction, $input4);
 $calulator->result();
