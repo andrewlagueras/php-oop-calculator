@@ -1,0 +1,10 @@
+{
+        "autoload": {
+                "psr-4": {
+                        "Lloricode\\": "src/"
+                },
+                "files":[
+                        "src/helpers.php"
+                ]
+        }
+}
