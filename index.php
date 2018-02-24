@@ -14,5 +14,20 @@ if (!defined('STDIN')) {
 
 $input1 = $argv[1];
 $input2 = $argv[2];
+$input3 = $argv[3];
+$input4 = $argv[4];
 
 print_r($argv);
+use Lloricode\Calculator\Calculator;
+use Lloricode\Calculator\Operation\Multiplication;
+
+$calulator = new Calculator;
+
+// $calulator->compute(new Addition, $input1);
+$calulator->result();
+$calulator->compute(new Multiplication, $input2);
+$calulator->result();
+// $calulator->compute(new Division, $input3);
+$calulator->result();
+// $calulator->compute(new Subtraction, $input4);
+$calulator->result();
