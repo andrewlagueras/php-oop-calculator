@@ -15,7 +15,7 @@ class Multiplication extends OperationAbstract
                 return $newValue * $result;
         }
 
-        public function getType() :string
+        public function getType()
         {
                 return self::TYPE;
         }
